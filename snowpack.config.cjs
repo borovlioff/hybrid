@@ -30,6 +30,6 @@ module.exports = {
   packageOptions:{},
   devOptions:{},
   buildOptions:{
-    out: "dist",
+    out: "snowpack-dist",
   }
 }
