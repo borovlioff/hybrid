@@ -20,12 +20,12 @@ module.exports = {
       }
     }],
   ],
-  build : {
+  optimize : {
     bundle: true,
     sourcemap: false,
     minify: true,
     target: 'es2017',
-    //entrypoints: ["src/assets/scripts/Main.js", "src/assets/scripts/Home.js", "src/assets/scripts/City.js", "src/assets/scripts/sw.js", "src/assets/scripts/Servise.js"]
+    entrypoints: ["src/app.ts"]
   },
   packageOptions:{},
   devOptions:{},
