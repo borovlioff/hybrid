@@ -10,10 +10,10 @@ module.exports = {
     src: "/"
   },
   plugins :[
+    ['@snowpack/plugin-typescript', { args: "--project ./tsconfig.json" }],
     ['@snowpack/plugin-react-refresh'],
     '@snowpack/plugin-vue',
     ['@snowpack/plugin-svelte', { preprocess: sveltePreprocess() }],
-    ['@snowpack/plugin-typescript', { args: "--project ./tsconfig.json" }],
     ['@snowpack/plugin-sass', {
       compilerOptions: {
         style: "compressed",
