@@ -27,8 +27,8 @@ export default {
         vue(/* options */)
         ,
         typescript(),
-        babel({ babelHelpers: 'bundled' }),
         commonjs(),
+        babel({ babelHelpers: 'bundled' }),
         nodeResolve(),
         replace({
             'process.env.NODE_ENV': JSON.stringify( 'production' )
