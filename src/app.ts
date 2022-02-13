@@ -1,12 +1,13 @@
 import TableSvelte from "./component/Table.svelte";
 import { createApp } from "vue";
-import TableVue from './component/Table.vue';
-import ReactDOM from 'react-dom';
-import TableReact from "./component/Table.jsx"
+import TableVue from "./component/Table.vue";
+import ReactDOM from "react-dom";
+// @ts-ignore
+import TableReact from "./component/Table.tsx"
 
-let  items = [[0,0,12,25],[23,23,13,16],[19,91,73,-5]]
+let  items = [[0,0,12,25],[23,23,13,16],[19,91,73,-5]];
 
-ReactDOM.render(TableReact({data: items}), document.querySelector(`[data-type="table-react"]`))
+ReactDOM.render(TableReact({data: items}), document.querySelector(`[data-type="table-react"]`));
 
 let vueApp = createApp(TableVue, {
     data:items,
@@ -15,4 +16,4 @@ let vueApp = createApp(TableVue, {
 new TableSvelte({
     target: document.querySelector(`[data-type="table-svelte"]`) as Element,
     props: {data:items}
-})
+});

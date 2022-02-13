@@ -1,3 +1,5 @@
 node_modules
-dist
+snowpack-dist
 rollup-dist
+webpack-dist
+.env
